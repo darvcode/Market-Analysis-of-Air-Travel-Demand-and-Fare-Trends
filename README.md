@@ -1,57 +1,47 @@
-# Flight Delay Prediction Project
+# Airline Market Analysis: Trends in Air Travel Demand and Fare Changes
 
 ## Problem Description
 
-Airlines and airports constantly strive to improve customer satisfaction and operational efficiency. One key factor in this effort is the ability to predict flight delays. By analyzing historical flight data, we aim to build a predictive model that accurately forecasts whether a flight will be delayed based on various factors.
+The airline industry is highly competitive, with carriers constantly adjusting fares to attract customers and maximize profits. Understanding trends in air travel demand and fare changes over time is crucial for both airlines and passengers. This project aims to analyze the market share of different carriers, track fare changes, and uncover trends in air travel demand using data from the U.S. airline industry.
 
 ## Dataset
 
-- **Dataset Description:** The dataset contains comprehensive information about airline flight routes within the US, including details such as departure and arrival times, distances, and more.
-- **Source:** [All Airline Flight Routes in the US on Kaggle](https://www.kaggle.com/datasets/oleksiimartusiuk/all-airline-fight-routes-in-the-us).
-
-## Features
-
-- **Flight ID:** Unique identifier for each flight.
-- **Airline:** The airline operating the flight.
-- **Departure Airport:** The airport from which the flight departs.
-- **Arrival Airport:** The airport at which the flight arrives.
-- **Scheduled Departure Time:** The scheduled time of departure.
-- **Scheduled Arrival Time:** The scheduled time of arrival.
-- **Actual Departure Time:** The actual time the flight departed.
-- **Actual Arrival Time:** The actual time the flight arrived.
-- **Distance:** The distance between the departure and arrival airports.
-- **Delay:** A binary variable indicating whether the flight was delayed (1) or not (0).
+- **Dataset Description:** This dataset includes records from the U.S. airline industry, covering flight operations, fares, and market share information from 1993 to 2024.
+- **Source:** [US Airline Industry Dataset (1993-2024) on Kaggle](https://www.kaggle.com/datasets/muhammadehsan000/us-airline-industry-dataset-1993-2024).
 
 ## Project Steps
 
 ### 1. Data Analysis
-- **Objective:** Explore the dataset to understand its structure, identify key features, and calculate summary statistics.
-- **Tools:** Pandas, Matplotlib, Seaborn.
+- **Objective:** Explore the dataset to understand the distribution of fares, demand, and market share over time.
+- **Specifics:**
+  - Analyze fare trends by year and by carrier.
+  - Investigate seasonal trends in air travel demand.
+  - Identify which carriers dominate the market and how their market share has evolved.
+- **Tools:** Python, PySpark, Pandas.
 
 ### 2. Data Cleaning
-- **Objective:** Remove duplicate records, handle missing values, and convert categorical variables into numerical format using encoding techniques.
-- **Tools:** Pandas, Scikit-learn.
+- **Objective:** Clean the dataset by handling missing values, removing duplicates, and ensuring consistency across different years.
+- **Tools:** Python, PySpark.
 
 ### 3. Feature Engineering
-- **Objective:** Extract additional features such as the day of the week, month, and peak hour indicators. Create interaction features to capture relationships between variables.
-- **Tools:** Pandas.
+- **Objective:** Create features that help in identifying trends, such as year-over-year changes in fare prices, demand during peak vs. off-peak seasons, and carrier performance over time.
+- **Tools:** Python, PySpark.
 
 ### 4. Data Visualization
-- **Objective:** Visualize the distribution of delays across different airlines, airports, and times of day using heatmaps, bar charts, and line plots.
-- **Tools:** Matplotlib, Seaborn.
+- **Objective:** Visualize key trends and patterns in air travel demand and fare changes.
+- **Specifics:**
+  - Create line charts to show fare trends over time.
+  - Use bar charts and pie charts to illustrate market share by carrier.
+  - Develop heatmaps to visualize seasonal demand trends.
+- **Tools:** Python, Matplotlib, Seaborn.
 
-### 5. Machine Learning
-- **Objective:** Split the dataset into training and testing sets. Train various models to predict flight delays, including:
-  - **Logistic Regression:** To establish a baseline model.
-  - **Random Forest:** To capture non-linear relationships.
-  - **Gradient Boosting:** For improved performance.
-  - **Support Vector Machine (SVM):** To handle high-dimensional data.
-- **Tools:** Scikit-learn.
+### 5. Market Analysis
+- **Objective:** Conduct a detailed analysis to understand how different carriers compare in terms of pricing, market share, and customer demand.
+  - **Competitive Analysis:** Compare fares across carriers for similar routes.
+  - **Demand Analysis:** Identify routes with the highest and lowest demand, and see how fares correlate with demand.
+  - **Market Share Analysis:** Determine which carriers are gaining or losing market share over time.
+- **Tools:** Python, PySpark.
 
-### 6. Model Evaluation and Selection
-- **Objective:** Compare the performance of different models using metrics such as accuracy, precision, recall, and F1-score. Use cross-validation to ensure the robustness of the models.
-- **Tools:** Scikit-learn.
-
-### 7. Deployment (Optional)
-- **Objective:** Create a web application using Flask or Django to deploy the predictive model. The application will allow users to input flight details and receive predictions about potential delays.
-- **Tools:** Flask/Django, HTML/CSS, JavaScript.
+### 6. Insights and Reporting
+- **Objective:** Summarize the findings in a clear and concise report that can be used by airline industry professionals to make informed decisions.
+- **Tools:** Jupyter Notebook for interactive analysis, Markdown for reporting.
