@@ -1,47 +1,65 @@
-# Airline Market Analysis: Trends in Air Travel Demand and Fare Changes
+# Airline Market Analysis: Unveiling Air Travel Trends and Fare Dynamics
 
-## Problem Description
+## Overview
 
-The airline industry is highly competitive, with carriers constantly adjusting fares to attract customers and maximize profits. Understanding trends in air travel demand and fare changes over time is crucial for both airlines and passengers. This project aims to analyze the market share of different carriers, track fare changes, and uncover trends in air travel demand using data from the U.S. airline industry.
+In an industry as fast-moving and competitive as aviation, understanding travel patterns, fare fluctuations, and carrier performance is crucial. This project takes a deep dive into the U.S. airline market, analyzing data spanning from 1993 to 2024. The goal is to provide actionable insights on fare trends, market demand, and how airlines are positioning themselves in this ever-changing environment.
+
+By tracking and visualizing this data, we aim to help industry professionals and interested individuals understand the market's behavior and make informed decisions.
 
 ## Dataset
 
-- **Dataset Description:** This dataset includes records from the U.S. airline industry, covering flight operations, fares, and market share information from 1993 to 2024.
-- **Source:** [US Airline Industry Dataset (1993-2024) on Kaggle](https://www.kaggle.com/datasets/muhammadehsan000/us-airline-industry-dataset-1993-2024).
+- **Description:** This dataset encompasses a comprehensive view of the U.S. airline industry. It includes data points related to flight operations, fares, and market share spanning over three decades (1993-2024).
+- **Source:** [US Airline Industry Dataset on Kaggle](https://www.kaggle.com/datasets/muhammadehsan000/us-airline-industry-dataset-1993-2024).
 
-## Project Steps
+## Steps Breakdown
 
 ### 1. Data Analysis
-- **Objective:** Explore the dataset to understand the distribution of fares, demand, and market share over time.
-- **Specifics:**
-  - Analyze fare trends by year and by carrier.
-  - Investigate seasonal trends in air travel demand.
-  - Identify which carriers dominate the market and how their market share has evolved.
-- **Tools:** Python, PySpark, Pandas.
+- **Goal:** Gain a broad understanding of the dataset, examining fare trends, demand, and market share evolution.
+- **Highlights:**
+  - We dug into fare patterns by year and airline to identify general pricing strategies.
+  - Seasonal trends in travel were explored, revealing when airlines see the highest demand.
+  - We pinpointed major players in the market and tracked how their market shares changed over time.
+- **Tools:** PySpark for data handling, Pandas for more refined operations, and Matplotlib/Seaborn for visualization.
 
 ### 2. Data Cleaning
-- **Objective:** Clean the dataset by handling missing values, removing duplicates, and ensuring consistency across different years.
-- **Tools:** Python, PySpark.
-
+- **Goal:** Prepare the dataset by addressing any inconsistencies or missing data that could affect analysis accuracy.
+- **Steps:**
+  - Checked for missing values and handled them by imputing missing fares with the median fare.
+  - Duplicates were removed to ensure each record was unique.
+  - Outliers in fare values were capped at the 99th percentile to prevent extreme values from skewing results.
+  - Data was filtered to focus on the top 10 carriers by total passengers for a more concentrated analysis.
+  
 ### 3. Feature Engineering
-- **Objective:** Create features that help in identifying trends, such as year-over-year changes in fare prices, demand during peak vs. off-peak seasons, and carrier performance over time.
-- **Tools:** Python, PySpark.
+- **Goal:** Create new variables that provide more insight into trends and carrier performance.
+- **Approach:**
+  - Introduced Year-over-Year (YoY) fare changes to measure pricing strategies over time.
+  - YoY passenger growth rates were calculated to monitor demand.
+  - Seasonality was incorporated to distinguish between peak and off-peak travel periods.
+  - Carrier delays were averaged to give a sense of how each airline is performing on punctuality.
 
 ### 4. Data Visualization
-- **Objective:** Visualize key trends and patterns in air travel demand and fare changes.
-- **Specifics:**
-  - Create line charts to show fare trends over time.
-  - Use bar charts and pie charts to illustrate market share by carrier.
-  - Develop heatmaps to visualize seasonal demand trends.
-- **Tools:** Python, Matplotlib, Seaborn.
+- **Goal:** Bring the numbers to life by visualizing the key trends and patterns we've uncovered.
+- **Key Visuals:**
+  - **Fare Trends:** Line charts that show how fares have evolved across different carriers.
+  - **Market Share:** Pie charts that break down which airlines hold the most passengers during different time periods.
+  - **Delays:** Bar charts that compare delays across the top airlines, sorted by popularity.
+  - **Demand Patterns:** Seasonal heatmaps that highlight when air travel spikes or dips.
 
 ### 5. Market Analysis
-- **Objective:** Conduct a detailed analysis to understand how different carriers compare in terms of pricing, market share, and customer demand.
-  - **Competitive Analysis:** Compare fares across carriers for similar routes.
-  - **Demand Analysis:** Identify routes with the highest and lowest demand, and see how fares correlate with demand.
-  - **Market Share Analysis:** Determine which carriers are gaining or losing market share over time.
-- **Tools:** Python, PySpark.
+- **Goal:** Dig into the competitive landscape and understand which airlines are dominating various routes and how fares correlate with demand.
+- **Tasks:**
+  - **Route Fare Comparison:** Fares were compared across carriers on similar routes to identify competitive pricing.
+  - **High/Low Demand Routes:** Routes with the most and least demand were highlighted, along with which airlines are serving those routes.
+  - **Market Share Over Time:** We mapped out which airlines are gaining or losing market share, looking at shifts across the years.
 
-### 6. Insights and Reporting
-- **Objective:** Summarize the findings in a clear and concise report that can be used by airline industry professionals to make informed decisions.
-- **Tools:** Jupyter Notebook for interactive analysis, Markdown for reporting.
+## Key Insights and Findings
+
+This project has unveiled several important trends in the U.S. airline industry:
+- **Pricing Fluctuations:** Fares have consistently risen over the years for certain carriers, especially during peak travel seasons, while others maintain more stable pricing.
+- **Market Share Shifts:** The dominance of certain airlines has changed significantly over time, especially after 2010, showing a competitive shift in the industry.
+- **Delay Patterns:** Some airlines have consistently outperformed others when it comes to punctuality, and there's a clear relationship between frequent delays and reduced passenger numbers on certain carriers.
+- **Demand Dynamics:** The busiest routes aren't always the ones with the highest fares. Airlines seem to adjust pricing strategies based on both competition and passenger demand on these routes.
+
+---
+
+By taking a data-driven approach, this project offers a clearer picture of the U.S. airline industry's trends and can be used as a decision-making tool for stakeholders in the field. Each analysis step, from feature engineering to visualization, contributes to a richer understanding of air travel patterns over time.
