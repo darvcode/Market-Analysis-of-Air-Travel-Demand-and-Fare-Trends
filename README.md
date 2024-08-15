@@ -54,7 +54,6 @@ By tracking and visualizing this data, we aim to help industry professionals and
 
 ## Key Insights and Findings
 
-This project has unveiled several important trends in the U.S. airline industry:
 - **Pricing Fluctuations:** Fares have consistently risen over the years for certain carriers, especially during peak travel seasons, while others maintain more stable pricing.
 - **Market Share Shifts:** The dominance of certain airlines has changed significantly over time, especially after 2010, showing a competitive shift in the industry.
 - **Delay Patterns:** Some airlines have consistently outperformed others when it comes to punctuality, and there's a clear relationship between frequent delays and reduced passenger numbers on certain carriers.
