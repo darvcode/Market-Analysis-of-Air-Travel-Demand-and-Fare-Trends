@@ -60,9 +60,10 @@ By tracking and visualizing this data, we aim to help industry professionals and
 - **Demand Dynamics:** The busiest routes aren't always the ones with the highest fares. Airlines seem to adjust pricing strategies based on both competition and passenger demand on these routes.
 - **HUB vs Non-HUB cities:** The data reveals that while the most popular airlines generally dominate the top 10 most demanded routes, being heavily present on these routes does not necessarily guarantee an airline's overall popularity. For example, even some airlines with a strong presence in high-demand routes may not lead in total passengers across the board. On the other hand, certain airlines achieve high popularity even with a less significant presence on the top 10 most demanded routes.
 
+
+By taking a data-driven approach, this project offers a clearer picture of the U.S. airline industry's trends based on the Kaggle Dataset. Each analysis step, from feature engineering to visualization, contributes to a richer understanding of air travel patterns over time.
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-
-
-By taking a data-driven approach, this project offers a clearer picture of the U.S. airline industry's trends and can be used as a decision-making tool for stakeholders in the field. Each analysis step, from feature engineering to visualization, contributes to a richer understanding of air travel patterns over time.
